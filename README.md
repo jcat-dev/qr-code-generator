@@ -14,7 +14,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://frontend-mentor-newbie-1.vercel.app/](https://frontend-mentor-newbie-1.vercel.app/)
+- Site URL: [Click here](https://frontend-mentor-newbie-1-jec.vercel.app/)
 
 ## My process
 
