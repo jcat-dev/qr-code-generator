@@ -1,0 +1,118 @@
+.contaniner {
+
+}
+
+.title {
+  width: 100%;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  
+  text-align: center;
+  color: var(--darkBlue-color);
+}
+
+.form {
+  width: min(400px, 90%);
+  height: fit-content;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+
+  position: relative;
+}
+
+.form-label {
+  width: 75%;
+  padding: 1rem;
+  margin-left: 1px;
+
+  position: absolute;
+  top: 0;
+  transition: top 0.2s;
+}
+
+.form-input {
+  width: 75%;
+  padding: 1rem;
+  border: 1px solid var(--darkBlue-color);
+
+  font-size: 1rem;
+  border-radius: 0.5em;
+}
+
+.form-input:focus {
+  border-color: var(--blue-color);
+}
+
+.form-input:focus ~ .form-label, .form-label--active{
+  width: fit-content;
+  border: 1px solid var(--blue-color);
+  border-bottom: none;
+  border-top: none;
+
+  top: -50%;
+  transform: scale(0.5);
+  background-color: white;
+  font-weight: bolder;
+  transition: top 0.2s, transform 0.2s 0.1s;
+  border-radius: 0.5em;
+}
+
+.form-btn {
+  width: 20%;
+  margin-left: auto;
+  border: 1px solid var(--darkBlue-color);
+
+  border-radius: 0.5em;
+  background-color: var(--white-color);
+}
+
+.form-btn:hover {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+}
+
+.form-btn:active {
+  transform: scale(0.95);
+}
+
+.qr {  
+  
+}
+
+.qr-code {
+  width: fit-content;
+  margin: auto;
+
+  background-color: var(--blue-color);
+  display: flex;
+}
+
+.qr-code--active {
+  padding: 1.5em;
+  border-radius: 0.5em;
+}
+
+.qr-code > canvas {
+  display: none;
+}
+
+.qr-code > img {
+  margin: auto;
+}
+
+.qr__search-result {
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+
+  text-align: center;  
+  overflow: auto;
+}
+
+.qr-link {
+  color: var(--darkBlue-color);
+}
