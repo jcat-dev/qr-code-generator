@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link href="./styles/global.css" rel="stylesheet">
+    <title>Generador de codigos QR</title>
+    
+    <script src="./utils/qrcode.min.js"></script>
+  </head>
+  <body>
+    <main class="container" >
+      <h1 class="title" >Generador de códigos QR</h1>
+
+      <form class="form" >          
+        <input 
+          id="input"
+          type="text"
+          class="form-input" 
+        />
+
+        <label 
+          id="label"
+          for="input"
+          class="form-label"
+        >
+          URL
+        </label>
+
+        
+        <button 
+          type="submit" 
+          class="form-btn"
+        >
+          Buscar
+        </button>
+      </form>
+      
+      <div class="qr">
+        <div 
+          id="qrCode"
+          class="qr-code"
+        >
+        </div>
+
+        <div class="qr__search-result" >
+          <a 
+            id="qrLink"
+            class="qr-link"
+            href=""
+            target="_blank"
+          >
+          </a>            
+        </div>
+      </div>
+    </main>  
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
